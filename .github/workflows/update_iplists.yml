@@ -6,6 +6,7 @@ on:
     - cron: "0 20 * * *" # 8:00 PM Coordinated Universal Time (UTC) / 12:00 PM Pacific Time (PT)
     - cron: "05 15 * * *"
     - cron: "20 23 * * *"
+    - cron: "20 22 * * *"
 
 jobs:
   build:
