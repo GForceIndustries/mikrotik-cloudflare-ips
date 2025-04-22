@@ -2,11 +2,7 @@ name: update_iplists
 
 on:
   schedule:
-    - cron: "0 08 * * *" # 8:00 AM Coordinated Universal Time (UTC) / 12:00 AM Pacific Time (PT)
-    - cron: "0 20 * * *" # 8:00 PM Coordinated Universal Time (UTC) / 12:00 PM Pacific Time (PT)
-    - cron: "05 15 * * *"
-    - cron: "20 23 * * *"
-    - cron: "20 22 * * *"
+    - cron: "30 05 * * *" # 05:30 UTC
   workflow_dispatch:
 
 jobs:
@@ -34,7 +30,7 @@ jobs:
       - name: Commit .rsc Files
         run: |
           #!/bin/bash
-          NOW=$(date +"%m-%d-%Y %H:%M:%S PT")
+          NOW=$(date +"%m-%d-%Y %H:%M:%S")
 
           if ! grep -q "error" "cloudflare-ips-v4.rsc" && ! grep -q "error" "cloudflare-ips-v6.rsc"; then
             git config --local user.email "noreply@github.actions.bot"
