@@ -21,9 +21,9 @@ def generate_rsc(url, outputFile):
         ip = str(line.decode("utf-8"))
         print("Adding IP: " + ip)
         if "v6" in url.lower():
-            writer.write("\nadd list=cloudflare-ips-v6 address=" + ip)
+            writer.write("\nadd list=cloudflare-ips-ipv6 address=" + ip)
         else:
-            writer.write("\nadd list=cloudflare-ips address=" + ip)
+            writer.write("\nadd list=cloudflare-ips-ipv4 address=" + ip)
 
     writer.close()
 
