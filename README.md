@@ -4,7 +4,7 @@ MikroTik firewall address lists for Cloudflare IPv4 and IPv6 address ranges. Ref
 
 ## Usage
 
-Create a script to download **cloudflare-ips-v4.rsc** and **cloudflare-ips-v6.rsc**, remove any existing entries in the **cloudflare-ips-ipv4** and **cloudflare-ips-ipv6** address lists, and import the new address lists. Then, create a schedule to run the script at an appropriate time for your environment. You can either configure these manually, or download and import **cloudflare-ips-setup.rsc** to create them automatically. Read on for a sample script and schedule if you want to configure these manually.
+Create a script to download **cloudflare-ips-v4.rsc** and **cloudflare-ips-v6.rsc**, remove any existing entries in the **cloudflare-ips-ipv4** and **cloudflare-ips-ipv6** address lists, and import the new address lists. Then, create a schedule to run the script at an appropriate time for your environment. You can either configure these manually, or download and import **cloudflare-ips-setup.rsc** to create them automatically. Read on for a sample script and schedule if you want to configure these manually. If you create the script and schedule manually, they require **ftp**, **read**, **write** and **test** permissions.
 
 ### Sample Script
 
@@ -25,5 +25,5 @@ Create a script to download **cloudflare-ips-v4.rsc** and **cloudflare-ips-v6.rs
 
 ```
 /system scheduler
-add interval=1d name=cloudflare-ips on-event=cloudflare-ips policy=ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon start-date=2025-04-23 start-time=06:45:00
+add interval=1d name=cloudflare-ips on-event=cloudflare-ips policy=ftp,read,write,test start-date=2025-04-23 start-time=06:45:00
 ```
