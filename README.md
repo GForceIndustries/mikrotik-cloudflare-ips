@@ -1,4 +1,4 @@
-# Cloudflare IP Address Lists for MikroTik Firewalls
+# Cloudflare Proxy IP Address Lists for MikroTik Firewalls
 
 MikroTik firewall address lists for Cloudflare IPv4 and IPv6 address ranges. Refreshed daily at 05:30 UTC. The generated configuration files create IPv4 and IPv6 address lists named **cloudflare-ips-ipv4** and **cloudflare-ips-ipv6** which can be used in firewall filter/NAT/mangle rules.
 
