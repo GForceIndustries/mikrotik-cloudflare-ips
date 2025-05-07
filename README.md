@@ -27,3 +27,11 @@ Create a script to download **cloudflare-ips-v4.rsc** and **cloudflare-ips-v6.rs
 /system scheduler
 add interval=1d name=cloudflare-ips on-event=cloudflare-ips policy=ftp,read,write,test start-date=2025-04-23 start-time=06:45:00
 ```
+
+## Licence & Warranty
+
+You are free to use the provided MikroTik configuration files to aid in maintaining your firewall configuration. You are free also to clone the repository and adapt the code that generates the daily files to suit your needs.
+
+Configuration files are provided without warranty. While they are offered in good faith, no assurance is offered that they are appropriate for your environment and no liability will is accepted for any outcomes of their use. You are responsible for examining the configuration provided and ascertaining that it is suitable for your use case.
+
+While the daily configuration files are generated using information provided by Cloudflare, they are 100% unofficial and are not endorsed or maintained by Cloudflare.
