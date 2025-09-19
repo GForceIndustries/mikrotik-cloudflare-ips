@@ -1,4 +1,4 @@
-# Generated on Thu Sep 18 05:34:27 2025 UTC
+# Generated on Fri Sep 19 05:34:32 2025 UTC
 /ip firewall address-list
 add list=cloudflare-ips-ipv4 address=173.245.48.0/20
 add list=cloudflare-ips-ipv4 address=103.21.244.0/22
