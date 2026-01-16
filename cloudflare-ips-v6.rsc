@@ -1,4 +1,4 @@
-# Generated on Thu Jan 15 05:40:03 2026 UTC
+# Generated on Fri Jan 16 05:39:41 2026 UTC
 /ipv6 firewall address-list
 add list=cloudflare-ips-ipv6 address=2400:cb00::/32
 add list=cloudflare-ips-ipv6 address=2606:4700::/32
