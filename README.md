@@ -30,6 +30,10 @@ Create a script to download **cloudflare-ips-v4.rsc** and **cloudflare-ips-v6.rs
 add interval=1d name=cloudflare-ips on-event=cloudflare-ips policy=ftp,read,write,test start-date=2025-04-23 start-time=06:45:00
 ```
 
+## Device Mode
+
+On devices running RouterOS 7.17 or later, schedules cannot be created or run if **scheduler** is not permitted by *device-mode*. Refer to [MikroTik's documentation](https://manual.mikrotik.com/docs/system-information-and-utilities/device-mode/) to understand how to check and update this on your device.
+
 ## Licence & Warranty
 
 You are free to use the provided MikroTik configuration files to aid in maintaining your firewall configuration. You are free also to clone the repository and adapt the code that generates the daily files to suit your needs.
